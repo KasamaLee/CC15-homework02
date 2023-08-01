@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            position: relative;    
+            height: 260px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: solid gray 1px;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+        .card:hover {
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-8px);
+            transition: box-shadow 0.1s ease-out 0s, transform 0.1s ease-out 0s;
+        }
+
+        .card > img {
+            width: 100%;
+            border-bottom: solid gray 1px;
+        }
+
+        .card > h4 {
+            margin: auto;
+        }
+
+        .close {
+            display: flex;
+            justify-content: flex-start;
+            padding: 4px 4px 0px 4px;
+        }
+
+        .close > img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .red-dot {
+            position: absolute;
+            color: white;
+            background-color: red;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            top: -16px;
+            right: -16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="close">
+            <img src="./close.svg" alt="close">
+        </div>
+        <img src="./profile.svg" alt="profile" />
+        <h4>A.Rudiger</h4>
+
+        <div class="red-dot">
+            7
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
